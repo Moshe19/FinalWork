@@ -9,7 +9,6 @@ lst += ['human'] * 10
 random.shuffle(lst)
 data = pd.DataFrame({'whoAmI': lst})
 print(f'{data}\n')
-
  
 data[''] = 1
 data.set_index([data.index, 'whoAmI'], inplace=True)
